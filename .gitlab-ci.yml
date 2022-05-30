@@ -25,7 +25,7 @@ maven-deploy:
   script:
     - "mvn deploy -DperformRelease"
   only:
-    - /^main$/
+    #- /^main$/
     - /^dev$/
     - /^ft-.*-deploy$/
     - /^rl-.*$/
