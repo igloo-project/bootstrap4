@@ -25,18 +25,10 @@ maven-deploy:
   script:
     - "mvn deploy -DperformRelease"
   only:
-    #- /^main$/
+    - /^main$/
     - /^dev$/
     - /^ft-.*-deploy$/
     - /^rl-.*$/
     - /^hf-.*$/
   tags:
     - docker
-
-trigger:
-  stage: trigger
-  trigger:
-    project: igloo-project/igloo-commons
-    branch: $CI_COMMIT_BRANCH
-  only:
-    - /^dev$/

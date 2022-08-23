@@ -20,7 +20,6 @@
 					<include>/META-INF/resources/webjars/bootstrap/**</include>
 				</includes>
 			</unpackOptions>
-			<scope>provided</scope>
 		</dependencySet>
 	</dependencySets>
 </assembly>
