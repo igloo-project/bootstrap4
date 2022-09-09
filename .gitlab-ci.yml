@@ -30,5 +30,6 @@ maven-deploy:
     - /^ft-.*-deploy$/
     - /^rl-.*$/
     - /^hf-.*$/
+    - tags
   tags:
     - docker
